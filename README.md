@@ -1,4 +1,7 @@
-## 中文预训练XLNet模型（Pre-Trained Chinese XLNet）
+## 中文预训练XLNet模型（Chinese Pre-Trained XLNet）
+
+感谢关注，目前模型还在预训练阶段，模型训练完毕后会尽快发布。
+
 We are not ready yet. Come back later :)
 
 
