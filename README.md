@@ -21,9 +21,11 @@
 * **`XLNet-base模型`**：12-layer, 768-hidden, 12-heads, 117M parameters  
 * **`XLNet-mid模型`**：24-layer, 768-hidden, 12-heads, 209M parameters
 
+**（目前仅能够通过Google Drive下载TensorFlow版本，其他下载点陆续上传中。）**
+
 | 模型简称 | 语料 | Google下载 | 讯飞云下载 |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow（上传中）]()** <br/>**[PyTorch（上传中）]()** | **[TensorFlow（上传中）]()** <br/>**[PyTorch（上传中）]()** |
+| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch（上传中）]()** | **[TensorFlow（上传中）]()** <br/>**[PyTorch（上传中）]()** |
 | **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **暂未开放** | **暂未开放** |
 
 > [1] 通用数据包括：百科、新闻、问答等数据，总词数达5.4B，与我们发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)训练语料相同。
