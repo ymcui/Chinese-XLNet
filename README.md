@@ -43,7 +43,6 @@ chinese_xlnet_mid_L-24_H-768_A-12.zip
     |- xlnet_config.json     # 模型参数
     |- spiece.model          # 词表
 ```
-PyTorch版本则包含`pytorch_model.bin`, `bert_config.json`, `vocab.txt`文件。
 
 
 ## 基线系统效果
