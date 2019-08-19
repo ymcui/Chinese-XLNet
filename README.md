@@ -145,8 +145,8 @@ python data_utils.py \
 	--mask_beta=1 \
 	--num_predict=85 \
 	--uncased=False \
-	--num_task=13 \
-	--task=$cnt
+	--num_task=10 \
+	--task=1
 ```
 
 ### 预训练
@@ -342,6 +342,11 @@ A: 。
 项目作者： 崔一鸣（哈工大讯飞联合实验室）、车万翔（哈工大）、刘挺（哈工大）、王士进（科大讯飞）、胡国平（科大讯飞）  
 
 本项目受到谷歌[TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc)计划资助。
+
+建设该项目过程中参考了如下仓库，在这里表示感谢：
+- XLNet: https://github.com/zihangdai/xlnet
+- Malaya: https://github.com/huseinzol05/Malaya/tree/master/xlnet
+- Korean XLNet（韩文描述，无翻译）: https://github.com/yeontaek/XLNET-Korean-Model
 
 
 ## 免责声明
