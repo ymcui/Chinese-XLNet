@@ -25,7 +25,7 @@ This project is based on CMU/Google official XLNet: https://github.com/zihangdai
 
 | Model | Data | Google Drive | iFLYTEK Cloud |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch（Uploading）]()** | **[TensorFlow（Uploading）]()** <br/>**[PyTorch（Uploading）]()** |
+| **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch（Uploading）]()** | **[TensorFlow（pw: f5ux）](https://pan.iflytek.com:443/link/AE46DD1269A4D253447488ACF050E7DD)** <br/>**[PyTorch（Uploading）]()** |
 | **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **Not available** | **Not available** |
 
 > [1] Extended data includes: baike, news, QA data, with 5.4B words in total, which is exactly the same with [BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm).
