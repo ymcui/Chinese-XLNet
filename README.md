@@ -12,10 +12,10 @@
 
 ## TODO List
 - ~~上传TensorFlow版本@Google Drive以及讯飞云下载点~~
-- 上传PyTorch版本
+- ~~上传PyTorch版本~~
 - 上传Fine-tuning脚本
 - 完善fine-tuning使用说明
-- 英文版README
+- ~~英文版README~~
 - 上传XLNet-base（延后，目前没训练完）
 
 
@@ -30,14 +30,12 @@
 
 
 ## 模型下载
-* **`XLNet-mid模型`**：24-layer, 768-hidden, 12-heads, 209M parameters
-* **`XLNet-base模型`**：12-layer, 768-hidden, 12-heads, 117M parameters  
-
-**（目前仅能够通过Google Drive下载TensorFlow版本，其他下载点陆续上传中。）**
+* **`XLNet-mid`**：24-layer, 768-hidden, 12-heads, 209M parameters
+* **`XLNet-base`**：12-layer, 768-hidden, 12-heads, 117M parameters  
 
 | 模型简称 | 语料 | Google下载 | 讯飞云下载 |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch（上传中）]()** | **[TensorFlow（密码f5ux）](https://pan.iflytek.com:443/link/AE46DD1269A4D253447488ACF050E7DD)** <br/>**[PyTorch（上传中）]()** |
+| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（密码f5ux）](https://pan.iflytek.com:443/link/AE46DD1269A4D253447488ACF050E7DD)** <br/>**[PyTorch（密码vnnt）](https://pan.iflytek.com:443/link/92F000AE7BA874BCA00051E12B3EC1DE)** |
 | **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **暂未开放** | **暂未开放** |
 
 > [1] 通用数据包括：百科、新闻、问答等数据，总词数达5.4B，与我们发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)训练语料相同。
@@ -191,7 +189,7 @@ python train.py \
 ```
 
 ## 下游任务微调细节
-下游任务微调使用的设备是谷歌Cloud TPU v2（64 HBM），以下简要说明各任务精调时的配置。
+下游任务微调使用的设备是谷歌Cloud TPU v2（64G HBM），以下简要说明各任务精调时的配置。
 
 ### CMRC 2018
 对于阅读理解任务，首先需要生成tf_records数据。

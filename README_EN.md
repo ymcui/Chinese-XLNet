@@ -20,12 +20,12 @@ This project is based on CMU/Google official XLNet: https://github.com/zihangdai
 | [FAQ](#faq) | Frequently Asked Questions |
 
 ## Download
-* **`XLNet-mid`**：24-layer, 768-hidden, 12-heads, 209M parameters
+* **`XLNet-mid`**：24-layer, 768-hidden, 12-heads, 209M parameters  
 * **`XLNet-base`**：12-layer, 768-hidden, 12-heads, 117M parameters  
 
 | Model | Data | Google Drive | iFLYTEK Cloud |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch（Uploading）]()** | **[TensorFlow（pw: f5ux）](https://pan.iflytek.com:443/link/AE46DD1269A4D253447488ACF050E7DD)** <br/>**[PyTorch（Uploading）]()** |
+| **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow (pw: f5ux)](https://pan.iflytek.com:443/link/AE46DD1269A4D253447488ACF050E7DD)** <br/>**[PyTorch (pw: vnnt)](https://pan.iflytek.com:443/link/92F000AE7BA874BCA00051E12B3EC1DE)** |
 | **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **Not available** | **Not available** |
 
 > [1] Extended data includes: baike, news, QA data, with 5.4B words in total, which is exactly the same with [BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm).
