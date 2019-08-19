@@ -1,5 +1,10 @@
-## 中文XLNet预训练模型（Pre-Trained Chinese XLNet）
+[**中文说明**](https://github.com/ymcui/Chinese-PreTrained-XLNet/) | [**English**]()
+
+An English description will be soon available. Stay tuned!
+
+## 中文XLNet预训练模型（Chinese Pre-Trained XLNet）
 本项目提供了面向中文的XLNet预训练模型，旨在丰富中文自然语言处理资源，提供多元化的中文预训练模型选择。
+我们欢迎各位专家学者下载使用，并共同促进和发展中文资源建设。
 
 本项目基于CMU/谷歌官方的XLNet：https://github.com/zihangdai/xlnet
 
@@ -12,6 +17,7 @@
 - 上传PyTorch版本以及讯飞云下载点
 - 上传Fine-tuning脚本
 - 完善fine-tuning使用说明
+- 英文版README
 - 上传XLNet-base（延后，目前没训练完）
 
 
@@ -26,8 +32,8 @@
 
 
 ## 模型下载
-* **`XLNet-base模型`**：12-layer, 768-hidden, 12-heads, 117M parameters  
 * **`XLNet-mid模型`**：24-layer, 768-hidden, 12-heads, 209M parameters
+* **`XLNet-base模型`**：12-layer, 768-hidden, 12-heads, 117M parameters  
 
 **（目前仅能够通过Google Drive下载TensorFlow版本，其他下载点陆续上传中。）**
 
@@ -96,6 +102,7 @@ chinese_xlnet_mid_L-24_H-768_A-12.zip
 
 ## 预训练细节
 以下以`XLNet-mid`模型为例，对预训练细节进行说明。
+
 ### 生成词表
 按照XLNet官方教程步骤，首先需要使用[Sentence Piece](https://github.com/google/sentencepiece)生成词表。
 在本项目中，我们使用的词表大小为32000，其余参数采用官方示例中的默认配置。
@@ -186,28 +193,127 @@ python train.py \
 ```
 
 ## 下游任务微调细节
+下游任务微调使用的设备是谷歌Cloud TPU v2（64 HBM），以下简要说明各任务精调时的配置。
+
 ### CMRC 2018
+对于阅读理解任务，首先需要生成tf_records数据。
+请参考XLNet官方教程之[SQuAD 2.0处理方法](https://github.com/zihangdai/xlnet#squad20)，在这里不再赘述。
 以下是CMRC 2018中文机器阅读理解任务中使用的脚本参数：
 ```
-（待添加）
+XLNET_DIR=YOUR_GS_BUCKET_PATH_TO_XLNET
+MODEL_DIR=YOUR_OUTPUT_MODEL_PATH
+DATA_DIR=YOUR_DATA_DIR_TO_TFRECORDS
+RAW_DIR=YOUR_RAW_DATA_DIR
+TPU_NAME=v2-xlnet
+TPU_ZONE=us-central1-b
+
+python -u run_cmrc_drcd.py \
+	--spiece_model_file=./spiece.model \
+	--model_config_path=${XLNET_DIR}/xlnet_config.json \
+	--init_checkpoint=${XLNET_DIR}/xlnet_model.ckpt \
+	--tpu_zone=${TPU_ZONE} \
+	--use_tpu=True \
+	--tpu=${TPU_NAME} \
+	--num_hosts=1 \
+	--num_core_per_host=8 \
+	--output_dir=${DATA_DIR} \
+	--model_dir=${MODEL_DIR} \
+	--predict_dir=${MODEL_DIR}/eval \
+	--train_file=${DATA_DIR}/cmrc2018_train.json \
+	--predict_file=${DATA_DIR}/cmrc2018_dev.json \
+	--uncased=False \
+	--max_answer_length=40 \
+	--max_seq_length=512 \
+	--do_train=True \
+	--train_batch_size=16 \
+	--do_predict=True \
+	--predict_batch_size=16 \
+	--learning_rate=3e-5 \
+	--adam_epsilon=1e-6 \
+	--iterations=1000 \
+	--save_steps=2000 \
+	--train_steps=2400 \
+	--warmup_steps=240
 ```
 
 ### DRCD
 以下是DRCD繁体中文机器阅读理解任务中使用的脚本参数：
 ```
-（待添加）
+XLNET_DIR=YOUR_GS_BUCKET_PATH_TO_XLNET
+MODEL_DIR=YOUR_OUTPUT_MODEL_PATH
+DATA_DIR=YOUR_DATA_DIR_TO_TFRECORDS
+RAW_DIR=YOUR_RAW_DATA_DIR
+TPU_NAME=v2-xlnet
+TPU_ZONE=us-central1-b
+
+python -u run_cmrc_drcd.py \
+	--spiece_model_file=./spiece.model \
+	--model_config_path=${XLNET_DIR}/xlnet_config.json \
+	--init_checkpoint=${XLNET_DIR}/xlnet_model.ckpt \
+	--tpu_zone=${TPU_ZONE} \
+	--use_tpu=True \
+	--tpu=${TPU_NAME} \
+	--num_hosts=1 \
+	--num_core_per_host=8 \
+	--output_dir=${DATA_DIR} \
+	--model_dir=${MODEL_DIR} \
+	--predict_dir=${MODEL_DIR}/eval \
+	--train_file=${DATA_DIR}/DRCD_training.json \
+	--predict_file=${DATA_DIR}/DRCD_dev.json \
+	--uncased=False \
+	--max_answer_length=30 \
+	--max_seq_length=512 \
+	--do_train=True \
+	--train_batch_size=16 \
+	--do_predict=True \
+	--predict_batch_size=16 \
+	--learning_rate=3e-5 \
+	--adam_epsilon=1e-6 \
+	--iterations=1000 \
+	--save_steps=2000 \
+	--train_steps=3600 \
+	--warmup_steps=360
 ```
 
 ### ChnSentiCorp
+与阅读理解任务不同，分类任务无需提前生成tf_records。
 以下是ChnSentiCorp情感分类任务中使用的脚本参数：
 ```
-（待添加）
-```
+XLNET_DIR=YOUR_GS_BUCKET_PATH_TO_XLNET
+MODEL_DIR=YOUR_OUTPUT_MODEL_PATH
+DATA_DIR=YOUR_DATA_DIR_TO_TFRECORDS
+RAW_DIR=YOUR_RAW_DATA_DIR
+TPU_NAME=v2-xlnet
+TPU_ZONE=us-central1-b
 
+python -u run_classifier.py \
+	--spiece_model_file=./spiece.model \
+	--model_config_path=${XLNET_DIR}/xlnet_config.json \
+	--init_checkpoint=${XLNET_DIR}/xlnet_model.ckpt \
+	--task_name=csc \
+	--do_train=True \
+	--do_eval=True \
+	--eval_all_ckpt=False \
+	--uncased=False \
+	--data_dir=${RAW_DIR} \
+	--output_dir=${DATA_DIR} \
+	--model_dir=${MODEL_DIR} \
+	--train_batch_size=48 \
+	--eval_batch_size=48 \
+	--num_hosts=1 \
+	--num_core_per_host=8 \
+	--num_train_epochs=3 \
+	--max_seq_length=256 \
+	--learning_rate=3e-5 \
+	--save_steps=5000 \
+	--use_tpu=True \
+	--tpu=${TPU_NAME} \
+	--tpu_zone=${TPU_ZONE}
+```
 
 ## FAQ
 **Q: 会发布更大的模型吗？**  
-A: 不一定，不保证。
+A: 不一定，不保证。如果我们获得了显著性能提升，会考虑发布出来。
 
 **Q: 在某些数据集上效果不好？**  
 A: 选用其他模型或者在这个checkpoint上继续用你的数据做预训练。
@@ -219,7 +325,14 @@ A: 抱歉，因为版权问题无法发布。
 A: 我们使用了Cloud TPU v3 (128G HBM)训练了2M steps（batch=32），大约需要3周时间。
 
 **Q: 为什么XLNet官方没有发布Multilingual或者Chinese XLNet？**  
-A: （以下是个人看法）不得而知，很多人留言表示希望有，戳[XLNet-issue-#3](https://github.com/zihangdai/xlnet/issues/3)。以XLNet官方的技术和算力来说，训练一个这样的模型并非难事（multilingual版可能比较复杂，需要考虑各语种之间的平衡，也可以参考[multilingual-bert](https://github.com/google-research/bert/blob/master/multilingual.md)中的描述。）。**不过反过来想一下，作者们也并没有义务一定要这么做。**作为学者来说，他们的technical contribution已经足够，不发布出来也不应受到指责。
+A: 
+（以下是个人看法）不得而知，很多人留言表示希望有，戳[XLNet-issue-#3](https://github.com/zihangdai/xlnet/issues/3)。
+以XLNet官方的技术和算力来说，训练一个这样的模型并非难事（multilingual版可能比较复杂，需要考虑各语种之间的平衡，也可以参考[multilingual-bert](https://github.com/google-research/bert/blob/master/multilingual.md)中的描述。）。 
+**不过反过来想一下，作者们也并没有义务一定要这么做。** 
+作为学者来说，他们的technical contribution已经足够，不发布出来也不应受到指责，呼吁大家理性对待别人的工作。
+
+**Q: XLNet多数情况下比BERT要好吗？**  
+A: 目前看来至少上述几个任务效果都还不错，使用的数据和我们发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)是一样的。
 
 **Q: ？**  
 A: 。
