@@ -1,6 +1,4 @@
-[**中文说明**](https://github.com/ymcui/Chinese-PreTrained-XLNet/) | [**English**]()
-
-An English description will be soon available. Stay tuned!
+[**中文说明**](https://github.com/ymcui/Chinese-PreTrained-XLNet/) | [**English**](https://github.com/ymcui/Chinese-PreTrained-XLNet/blob/master/README_EN.md)
 
 ## 中文XLNet预训练模型（Chinese Pre-Trained XLNet）
 本项目提供了面向中文的XLNet预训练模型，旨在丰富中文自然语言处理资源，提供多元化的中文预训练模型选择。
@@ -13,8 +11,8 @@ An English description will be soon available. Stay tuned!
 
 
 ## TODO List
-- ~~上传TensorFlow版本@Google Drive~~
-- 上传PyTorch版本以及讯飞云下载点
+- ~~上传TensorFlow版本@Google Drive以及讯飞云下载点~~
+- 上传PyTorch版本
 - 上传Fine-tuning脚本
 - 完善fine-tuning使用说明
 - 英文版README
@@ -39,7 +37,7 @@ An English description will be soon available. Stay tuned!
 
 | 模型简称 | 语料 | Google下载 | 讯飞云下载 |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch（上传中）]()** | **[TensorFlow（上传中）]()** <br/>**[PyTorch（上传中）]()** |
+| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch（上传中）]()** | **[TensorFlow（密码f5ux）](https://pan.iflytek.com:443/link/AE46DD1269A4D253447488ACF050E7DD)** <br/>**[PyTorch（上传中）]()** |
 | **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **暂未开放** | **暂未开放** |
 
 > [1] 通用数据包括：百科、新闻、问答等数据，总词数达5.4B，与我们发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)训练语料相同。
