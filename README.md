@@ -7,6 +7,14 @@
 **2019/8/19 提供了在大规模通用语料（5.4B词数）上训练的中文`XLNet-mid`模型，查看[模型下载](#模型下载)**
 
 
+## TODO List
+- ~~上传TensorFlow版本@Google Drive~~
+- 上传PyTorch版本以及讯飞云下载点
+- 上传Fine-tuning脚本
+- 完善fine-tuning使用说明
+- 上传XLNet-base（延后，目前没训练完）
+
+
 ## 内容导引
 | 章节 | 描述 |
 |-|-|
