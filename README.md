@@ -13,8 +13,8 @@
 ## TODO List
 - ~~上传TensorFlow版本@Google Drive以及讯飞云下载点~~
 - ~~上传PyTorch版本~~
-- 上传Fine-tuning脚本
-- 完善fine-tuning使用说明
+- ~~上传Fine-tuning脚本~~
+- ~~完善fine-tuning使用说明~~
 - ~~英文版README~~
 - 上传XLNet-base（延后，目前没训练完）
 
@@ -93,8 +93,7 @@ chinese_xlnet_mid_L-24_H-768_A-12.zip
 | :------- | :---------: | :---------: |
 | BERT | 94.7 (94.3) | 95.0 (94.7) |  
 | BERT-wwm | 95.1 (94.5) | **95.4 (95.0)** |
-| **XLNet-mid** | **95.2 (95.0)** | **95.4** (94.9) |
-
+| **XLNet-mid** | **95.8 (95.2)** | **95.4** (94.9) |
 
 ## 预训练细节
 以下以`XLNet-mid`模型为例，对预训练细节进行说明。
@@ -190,6 +189,7 @@ python train.py \
 
 ## 下游任务微调细节
 下游任务微调使用的设备是谷歌Cloud TPU v2（64G HBM），以下简要说明各任务精调时的配置。
+如果你使用GPU进行精调，请更改相应参数以适配，尤其是`batch_size`, `learning_rate`等参数。
 
 ### CMRC 2018
 对于阅读理解任务，首先需要生成tf_records数据。
@@ -300,7 +300,7 @@ python -u run_classifier.py \
 	--num_core_per_host=8 \
 	--num_train_epochs=3 \
 	--max_seq_length=256 \
-	--learning_rate=3e-5 \
+	--learning_rate=2e-5 \
 	--save_steps=5000 \
 	--use_tpu=True \
 	--tpu=${TPU_NAME} \

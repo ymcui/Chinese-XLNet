@@ -79,7 +79,7 @@ We use ChnSentiCorp data for sentiment classification, which is a binary classif
 | :------- | :---------: | :---------: |
 | BERT | 94.7 (94.3) | 95.0 (94.7) |  
 | BERT-wwm | 95.1 (94.5) | **95.4 (95.0)** |
-| **XLNet-mid** | **95.2 (95.0)** | **95.4** (94.9) |
+| **XLNet-mid** | **95.8 (95.2)** | **95.4** (94.9) |
 
 
 ## Pre-training Details
