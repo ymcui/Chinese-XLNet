@@ -1,7 +1,7 @@
 [**中文说明**](https://github.com/ymcui/Chinese-PreTrained-XLNet/) | [**English**](https://github.com/ymcui/Chinese-PreTrained-XLNet/blob/master/README_EN.md)
 
 ## Chinese Pre-Trained XLNet
-This project provides a XLNet pre-training model for Chinese, which aims to enrich Chinese natural language processing resources and provide a variety of Chinese pre-training model selection.
+This project provides XLNet pre-training models for Chinese, which aims to enrich Chinese natural language processing resources and provide a variety of Chinese pre-training model selection.
 We welcome all experts and scholars to download and use this model.
 
 This project is based on CMU/Google official XLNet: https://github.com/zihangdai/xlnet
@@ -300,18 +300,18 @@ A: Please use other pre-trained model or continue to do pre-training on your own
 A: Nope, copyright is the biggest concern.
 
 **Q: How long did you take to train XLNet-mid?**  
-A: We use Cloud TPU v3 (128G HBM) to train 2M steps with batch size of 32, which takes roughly three weeks.
+A: We use Cloud TPU v3 (128G HBM) to train 2M steps with a batch size of 32, which takes roughly three weeks.
 
 **Q: Does XLNet perform better than BERT in most of the times?**  
 A: Seems to be right. At least the tasks we tried above are substantially better than BERTs.
 
 
-## Acknowledgement
+## Acknowledgment
 Authors: Yiming Cui (Joint Laboratory of HIT and iFLYTEK Research, HFL), Wanxiang Che (Harbin Institute of Technology), Ting Liu (Harbin Institute of Technology), Shijin Wang (iFLYTEK), Guoping Hu (iFLYTEK)
 
 This project is supported by Google [TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) Program。
 
-We also refered to the following repository:
+We also referred to the following repository:
 - XLNet: https://github.com/zihangdai/xlnet
 - Malaya: https://github.com/huseinzol05/Malaya/tree/master/xlnet
 - Korean XLNet: https://github.com/yeontaek/XLNET-Korean-Model
@@ -322,7 +322,7 @@ We also refered to the following repository:
 
 The experiments only represent the empirical results in certain conditions and should not be regarded as the nature of the respective models. The results may vary using different random seeds, computing devices, etc. 
 
-**The contents in this repository are for academic research purpose, and we do not provide any conclusive remarks. Users are free to use anythings in this repository within the scope of Apache-2.0 licence. However, we are not responsible for direct or indirect losses that was caused by using the content in this project.**
+**The contents in this repository are for academic research purpose, and we do not provide any conclusive remarks. Users are free to use anything in this repository within the scope of Apache-2.0 licence. However, we are not responsible for direct or indirect losses that were caused by using the content in this project.**
 
 ## Issues
 If there is any problem, please submit a GitHub Issue.
