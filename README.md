@@ -193,6 +193,7 @@ python train.py \
 ## 下游任务微调细节
 下游任务微调使用的设备是谷歌Cloud TPU v2（64G HBM），以下简要说明各任务精调时的配置。
 如果你使用GPU进行精调，请更改相应参数以适配，尤其是`batch_size`, `learning_rate`等参数。
+**相关代码请查看`src`目录。**
 
 ### CMRC 2018
 对于阅读理解任务，首先需要生成tf_records数据。
