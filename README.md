@@ -1,4 +1,4 @@
-[**中文说明**](https://github.com/ymcui/Chinese-PreTrained-XLNet/) | [**English**](https://github.com/ymcui/Chinese-PreTrained-XLNet/blob/master/README_EN.md)
+[**中文说明**](./README.md) | [**English**](./README_EN.md)
 
 ## 中文XLNet预训练模型（Chinese Pre-Trained XLNet）
 本项目提供了面向中文的XLNet预训练模型，旨在丰富中文自然语言处理资源，提供多元化的中文预训练模型选择。
