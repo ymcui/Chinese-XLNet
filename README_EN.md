@@ -7,7 +7,7 @@ We welcome all experts and scholars to download and use this model.
 This project is based on CMU/Google official XLNet: https://github.com/zihangdai/xlnet
 
 ## News
-**2019/9/5 `XLNet-base` has been released. **  
+**2019/9/5 `XLNet-base` has been released. Check [Download](#Download) **  
 2019/8/19 We provide pre-trained Chinese `XLNet-mid` model, which was trained on large-scale data. Check [Download](#Download)
 
 
@@ -27,7 +27,7 @@ This project is based on CMU/Google official XLNet: https://github.com/zihangdai
 | Model | Data | Google Drive | iFLYTEK Cloud |
 | :------- | :--------- | :---------: | :---------: |
 | **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow (pw: f5ux)](https://pan.iflytek.com:443/link/AE46DD1269A4D253447488ACF050E7DD)** <br/>**[PyTorch (pw: vnnt)](https://pan.iflytek.com:443/link/92F000AE7BA874BCA00051E12B3EC1DE)** |
-| **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/> | **TensorFlow** <br/> |
+| **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（pw: A8Ts）](https://pan.iflytek.com:443/link/6112CA3A27541D09CA8A2EDBED769B48)** <br/>**[PyTorch（pw: ixgT）](https://pan.iflytek.com:443/link/6622ED88F059D699E6C4C71FDAE031F9)** |
 
 > [1] Extended data includes: baike, news, QA data, with 5.4B words in total, which is exactly the same with [BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm).
 
