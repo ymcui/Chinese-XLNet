@@ -808,8 +808,8 @@ def main(_):
         train_file, FLAGS.num_passes)
 
     # here we use epoch number to calculate total train_steps
-    train_steps = int(len(train_examples) * FLAGS.num_train_epochs / FLAGS.train_batch_size)
-    FLAGS.warmup_steps = int(0.1 * train_steps)
+    FLAGS.train_steps = int(len(train_examples) * FLAGS.num_train_epochs / FLAGS.train_batch_size)
+    FLAGS.warmup_steps = int(0.1 * FLAGS.train_steps)
 
     train_input_fn = file_based_input_fn_builder(
         input_file=train_file,
@@ -817,7 +817,7 @@ def main(_):
         is_training=True,
         drop_remainder=True)
 
-    estimator.train(input_fn=train_input_fn, max_steps=train_steps)
+    estimator.train(input_fn=train_input_fn, max_steps=FLAGS.train_steps)
 
   if FLAGS.do_eval or FLAGS.do_predict:
     eval_examples = processor.get_devtest_examples(FLAGS.data_dir, FLAGS.eval_split)
