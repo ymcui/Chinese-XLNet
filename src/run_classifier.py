@@ -427,6 +427,55 @@ class CSCProcessor(DataProcessor):
     return examples
 
 
+class CSVProcessor(DataProcessor):
+  def _read_tsv(cls, input_file, quotechar=None):
+    """Reads a tab separated value file."""
+    with tf.gfile.Open(input_file, "r") as f:
+      reader = csv.reader(f)
+      lines = []
+      for line in reader:
+        if len(line) == 0: continue
+        lines.append(line)
+      return lines
+
+  def get_labels(self):
+    return ["0", "1"]
+
+  def get_train_examples(self, data_dir):
+    set_type = "train"
+    input_file = os.path.join(data_dir, set_type + ".csv")
+    tf.logging.info("using file %s" % input_file)
+    lines = self._read_tsv(input_file)
+    examples = []
+    for (i, line) in enumerate(lines):
+      if i == 0:
+        continue
+      guid = "%s-%s" % (set_type, i)
+
+      text_a = line[0]
+      label = line[1]
+
+      examples.append(
+        InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
+    return examples
+
+  def get_devtest_examples(self, data_dir, set_type="dev"):
+    input_file = os.path.join(data_dir, set_type + ".csv")
+    tf.logging.info("using file %s" % input_file)
+    lines = self._read_tsv(input_file)
+    examples = []
+    for (i, line) in enumerate(lines):
+      if i == 0:
+        continue
+      guid = "%s-%s" % (set_type, i)
+
+      text_a = line[0]
+      label = line[1]
+
+      examples.append(
+        InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
+    return examples
+
 
 class MnliMismatchedProcessor(MnliMatchedProcessor):
   def __init__(self):
@@ -747,7 +796,8 @@ def main(_):
       'imdb': ImdbProcessor,
       "yelp5": Yelp5Processor,
       "xnli": XnliProcessor,
-      "csc": CSCProcessor
+      "csc": CSCProcessor,
+      "csv": CSVProcessor,
   }
 
   if not FLAGS.do_train and not FLAGS.do_eval and not FLAGS.do_predict:
@@ -858,10 +908,13 @@ def main(_):
     for filename in filenames:
       if filename.endswith(".index"):
         ckpt_name = filename[:-6]
+        tf.logging.info(f"ckpt_name: {ckpt_name}")
         cur_filename = join(FLAGS.model_dir, ckpt_name)
-        global_step = int(cur_filename.split("-")[-1])
-        tf.logging.info("Add {} to eval list.".format(cur_filename))
-        steps_and_files.append([global_step, cur_filename])
+        step = cur_filename.split("-")[-1]
+        if step.isdigit():
+          global_step = int(step)
+          tf.logging.info("Add {} to eval list.".format(cur_filename))
+          steps_and_files.append([global_step, cur_filename])
     steps_and_files = sorted(steps_and_files, key=lambda x: x[0])
 
     # Decide whether to evaluate all ckpts
