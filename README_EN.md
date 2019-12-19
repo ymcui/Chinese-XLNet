@@ -7,7 +7,7 @@ We welcome all experts and scholars to download and use this model.
 This project is based on CMU/Google official XLNet: https://github.com/zihangdai/xlnet
 
 ## News
-**2019/12/19 The models in this repository now can be easily accessed through [Huggingface-Transformers](https://github.com/huggingface/transformers), check [Quick-Load]**
+**2019/12/19 The models in this repository now can be easily accessed through [Huggingface-Transformers](https://github.com/huggingface/transformers), check [Quick Load](#Quick-Load)**
 
 2019/9/5 `XLNet-base` has been released. Check [Download](#Download)
 
