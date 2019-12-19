@@ -7,7 +7,10 @@ We welcome all experts and scholars to download and use this model.
 This project is based on CMU/Google official XLNet: https://github.com/zihangdai/xlnet
 
 ## News
-**2019/9/5 `XLNet-base` has been released. Check [Download](#Download) **  
+**2019/12/19 The models in this repository now can be easily accessed through [Huggingface-Transformers](https://github.com/huggingface/transformers), check [Quick-Load]**
+
+2019/9/5 `XLNet-base` has been released. Check [Download](#Download)
+
 2019/8/19 We provide pre-trained Chinese `XLNet-mid` model, which was trained on large-scale data. Check [Download](#Download)
 
 
@@ -42,6 +45,17 @@ chinese_xlnet_mid_L-24_H-768_A-12.zip
     |- spiece.model          # Vocabulary
 ```
 
+### Quick Load
+With [Huggingface-Transformers](https://github.com/huggingface/transformers), the models above could be easily accessed and loaded through the following codes.
+```
+tokenizer = AutoTokenizer.from_pretrained("MODEL_NAME")
+model = AutoModel.from_pretrained("MODEL_NAME")
+```
+The actual model and its `MODEL_NAME` are listed below.   
+| Original Model | MODEL_NAME |
+| - | - |
+| XLNet-mid | hfl/chinese-xlnet-mid |
+| XLNet-base | hfl/chinese-xlnet-base |
 
 ## Baselines
 We conduct experiments on several Chinese NLP data, and compare the performance among BERT, BERT-wwm, BERT-wwm-ext, XLNet-base, and XLNet-mid.

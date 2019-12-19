@@ -7,7 +7,10 @@
 本项目基于CMU/谷歌官方的XLNet：https://github.com/zihangdai/xlnet
 
 ## 新闻
-**2019/9/5 `XLNet-base`已可下载，查看[模型下载](#模型下载)**  
+**2019/12/19 本目录发布的模型已接入[Huggingface-Transformers](https://github.com/huggingface/transformers)，查看[快速加载](#快速加载)**
+
+2019/9/5 `XLNet-base`已可下载，查看[模型下载](#模型下载)
+
 2019/8/19 提供了在大规模通用语料（5.4B词数）上训练的中文`XLNet-mid`模型，查看[模型下载](#模型下载)
 
 ## 内容导引
@@ -44,6 +47,18 @@ chinese_xlnet_mid_L-24_H-768_A-12.zip
     |- xlnet_config.json     # 模型参数
     |- spiece.model          # 词表
 ```
+
+### 快速加载
+依托于[Huggingface-Transformers 2.2.2](https://github.com/huggingface/transformers)，可轻松调用以上模型。
+```
+tokenizer = AutoTokenizer.from_pretrained("MODEL_NAME")
+model = AutoModel.from_pretrained("MODEL_NAME")
+```
+其中`MODEL_NAME`对应列表如下：  
+| 模型名 | MODEL_NAME |
+| - | - |
+| XLNet-mid | hfl/chinese-xlnet-mid |
+| XLNet-base | hfl/chinese-xlnet-base |
 
 
 ## 基线系统效果
