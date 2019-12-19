@@ -51,7 +51,8 @@ With [Huggingface-Transformers](https://github.com/huggingface/transformers), th
 tokenizer = AutoTokenizer.from_pretrained("MODEL_NAME")
 model = AutoModel.from_pretrained("MODEL_NAME")
 ```
-The actual model and its `MODEL_NAME` are listed below.   
+The actual model and its `MODEL_NAME` are listed below.
+
 | Original Model | MODEL_NAME |
 | - | - |
 | XLNet-mid | hfl/chinese-xlnet-mid |
