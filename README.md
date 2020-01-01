@@ -29,8 +29,8 @@
 
 | 模型简称 | 语料 | Google下载 | 讯飞云下载 |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（密码f5ux）](https://pan.iflytek.com:443/link/AE46DD1269A4D253447488ACF050E7DD)** <br/>**[PyTorch（密码vnnt）](https://pan.iflytek.com:443/link/92F000AE7BA874BCA00051E12B3EC1DE)** |
-| **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（密码A8Ts）](https://pan.iflytek.com:443/link/6112CA3A27541D09CA8A2EDBED769B48)** <br/>**[PyTorch（密码ixgT）](https://pan.iflytek.com:443/link/6622ED88F059D699E6C4C71FDAE031F9)** |
+| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（密码Cpq8）](https://pan.iflytek.com:443/link/3DD1B2F248C5B33F3893829E9B7FCDA3)** <br/>**[PyTorch（密码VBE6）](https://pan.iflytek.com:443/link/DF1DACD696FAC4E0BEE4EB09674CA7D8)** |
+| **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（密码07Xj）](https://pan.iflytek.com:443/link/A2483AD206EF85FD91569B498A3C3879)** <br/>**[PyTorch（密码hteX）](https://pan.iflytek.com:443/link/5DBDD89414E5B565D3322D6B7937DF47)** |
 
 > [1] 通用数据包括：百科、新闻、问答等数据，总词数达5.4B，与我们发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)训练语料相同。
 
