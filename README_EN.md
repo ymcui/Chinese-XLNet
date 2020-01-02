@@ -30,7 +30,7 @@ This project is based on CMU/Google official XLNet: https://github.com/zihangdai
 | Model | Data | Google Drive | iFLYTEK Cloud |
 | :------- | :--------- | :---------: | :---------: |
 | **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（pw:Cpq8）](https://pan.iflytek.com:443/link/3DD1B2F248C5B33F3893829E9B7FCDA3)** <br/>**[PyTorch（pw:VBE6）](https://pan.iflytek.com:443/link/DF1DACD696FAC4E0BEE4EB09674CA7D8)** |
-| **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（pw:07Xj）](https://pan.iflytek.com:443/link/A2483AD206EF85FD91569B498A3C3879)** <br/>**[PyTorch（pw:hteX）](https://pan.iflytek.com:443/link/5DBDD89414E5B565D3322D6B7937DF47)** |
+| **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（pw:DfNj）](https://pan.iflytek.com:443/link/AECE9CCD57DD58A498676FD71D0557F8)** <br/>**[PyTorch（pw:6e3y）](https://pan.iflytek.com:443/link/AEF637509F3777F6526FF276AD19763C)** |
 
 > [1] Extended data includes: baike, news, QA data, with 5.4B words in total, which is exactly the same with [BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm).
 
