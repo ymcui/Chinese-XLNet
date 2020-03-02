@@ -7,7 +7,9 @@
 本项目基于CMU/谷歌官方的XLNet：https://github.com/zihangdai/xlnet
 
 ## 新闻
-**2019/12/19 本目录发布的模型已接入[Huggingface-Transformers](https://github.com/huggingface/transformers)，查看[快速加载](#快速加载)**
+**2020/2/26 哈工大讯飞联合实验室发布[知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer)**
+
+2019/12/19 本目录发布的模型已接入[Huggingface-Transformers](https://github.com/huggingface/transformers)，查看[快速加载](#快速加载)
 
 2019/9/5 `XLNet-base`已可下载，查看[模型下载](#模型下载)
 
