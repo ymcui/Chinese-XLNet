@@ -1,6 +1,16 @@
 [**中文说明**](./README.md) | [**English**](./README_EN.md)
 
-## 中文XLNet预训练模型（Chinese Pre-Trained XLNet）
+<p align="center">
+    <br>
+    <img src="./pics/banner.png" width="500"/>
+    <br>
+</p>
+<p align="center">
+    <a href="https://github.com/ymcui/Chinese-PreTrained-XLNet/blob/master/LICENSE">
+        <img alt="GitHub" src="https://img.shields.io/github/license/ymcui/Chinese-PreTrained-XLNet.svg?color=blue&style=flat-square">
+    </a>
+</p>
+
 本项目提供了面向中文的XLNet预训练模型，旨在丰富中文自然语言处理资源，提供多元化的中文预训练模型选择。
 我们欢迎各位专家学者下载使用，并共同促进和发展中文资源建设。
 
