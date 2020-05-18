@@ -330,6 +330,18 @@ A: We use Cloud TPU v3 (128G HBM) to train 2M steps with batch size of 32, which
 **Q: Does XLNet perform better than BERT in most of the times?**  
 A: Seems to be right. At least the tasks we tried above are substantially better than BERTs.
 
+## Citation
+If you find the technical report or resource is useful, please cite the following technical report in your paper.
+https://arxiv.org/abs/2004.13922
+```
+@article{cui-2020-revisiting,
+  title={Revisiting Pre-Trained Models for Chinese Natural Language Processing},
+  author={Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin, Bing and Wang, Shijin and Hu, Guoping},
+  journal={arXiv preprint arXiv:2004.13922},
+  year={2020}
+}
+```
+
 
 ## Acknowledgement
 Authors: Yiming Cui (Joint Laboratory of HIT and iFLYTEK Research, HFL), Wanxiang Che (Harbin Institute of Technology), Ting Liu (Harbin Institute of Technology), Shijin Wang (iFLYTEK), Guoping Hu (iFLYTEK)
