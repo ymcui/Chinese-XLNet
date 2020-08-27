@@ -15,7 +15,9 @@ You may also interested in,
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
-**2020/2/26 We release a knowledge distillation toolkit [TextBrewer](https://github.com/airaria/TextBrewer)**
+**August 27, 2020 We are happy to announce that our model is on top of GLUE benchmark, check [leaderboard](https://gluebenchmark.com/leaderboard).**
+
+2020/2/26 We release a knowledge distillation toolkit [TextBrewer](https://github.com/airaria/TextBrewer)
 
 2019/12/19 The models in this repository now can be easily accessed through [Huggingface-Transformers](https://github.com/huggingface/transformers), check [Quick Load](#Quick-Load)
 

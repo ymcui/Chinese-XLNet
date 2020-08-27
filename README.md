@@ -27,7 +27,9 @@
 ### 哈工大讯飞联合实验室（HFL）2021提前批校园招聘开始了！欢迎各位[投递简历](https://wj.qq.com/s2/6730642/762d)！
 
 ## 新闻
-**2020/3/11 为了更好地了解需求，邀请您填写[调查问卷](https://wj.qq.com/s2/5637766/6281)，以便为大家提供更好的资源。**
+**2020/8/27 哈工大讯飞联合实验室在通用自然语言理解评测GLUE中荣登榜首，查看[GLUE榜单](https://gluebenchmark.com/leaderboard)，[新闻](http://dwz.date/ckrD)。**
+
+2020/3/11 为了更好地了解需求，邀请您填写[调查问卷](https://wj.qq.com/s2/5637766/6281)，以便为大家提供更好的资源。
 
 2020/2/26 哈工大讯飞联合实验室发布[知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer)
 
