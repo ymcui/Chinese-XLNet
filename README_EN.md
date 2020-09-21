@@ -15,7 +15,9 @@ You may also interested in,
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
-**August 27, 2020 We are happy to announce that our model is on top of GLUE benchmark, check [leaderboard](https://gluebenchmark.com/leaderboard).**
+**2020/9/15 Our paper ["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922) is accepted to [Findings of EMNLP](https://2020.emnlp.org) as a long paper.**
+
+2020/8/27 We are happy to announce that our model is on top of GLUE benchmark, check [leaderboard](https://gluebenchmark.com/leaderboard).
 
 2020/2/26 We release a knowledge distillation toolkit [TextBrewer](https://github.com/airaria/TextBrewer)
 
@@ -344,11 +346,12 @@ A: Seems to be right. At least the tasks we tried above are substantially better
 If you find the technical report or resource is useful, please cite the following technical report in your paper.
 https://arxiv.org/abs/2004.13922
 ```
-@article{cui-2020-revisiting,
-  title={Revisiting Pre-Trained Models for Chinese Natural Language Processing},
-  author={Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin, Bing and Wang, Shijin and Hu, Guoping},
-  journal={arXiv preprint arXiv:2004.13922},
-  year={2020}
+@inproceedings{cui-etal-2020-revisiting,
+    title={Revisiting Pre-Trained Models for Chinese Natural Language Processing},
+    author={Cui, Yiming and Che, Wanxiang and Liu, Ting and Qin, Bing and Wang, Shijin and Hu, Guoping},
+    booktitle = "Findings of EMNLP",
+    year = "2020",
+    publisher = "Association for Computational Linguistics"
 }
 ```
 
