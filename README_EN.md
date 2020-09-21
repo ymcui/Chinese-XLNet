@@ -36,6 +36,7 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 | [Pre-training Details](#Pre-training-Details) | Details for pre-training |
 | [Fine-tuning Details](#Fine-tuning-Details) | Details for fine-tuning |
 | [FAQ](#faq) | Frequently Asked Questions |
+| [Citation](#Citation) | Citation |
 
 ## Download
 * **`XLNet-mid`**：24-layer, 768-hidden, 12-heads, 209M parameters  
