@@ -50,7 +50,7 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 > [1] Extended data includes: baike, news, QA data, with 5.4B words in total, which is exactly the same with [BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm).
 
-#### PyTorch Version
+### PyTorch Version
 
 If you need these models in PyTorch,
 
@@ -60,7 +60,7 @@ If you need these models in PyTorch,
 
 Steps: select one of the model in the page above → click "list all files in model" at the end of the model page → download bin/json files from the pop-up window
 
-#### Note
+### Note
 
 The whole zip package roughly takes ~800M for `XLNet-mid` model.
 ZIP package includes the following files:
