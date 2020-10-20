@@ -8,6 +8,7 @@ This project is based on CMU/Google official XLNet: https://github.com/zihangdai
 
 You may also interested in,
 
+- Chinese MacBERT: https://github.com/ymcui/MacBERT
 - Chinese ELECTRA: https://github.com/ymcui/Chinese-ELECTRA
 - Chinese BERT-wwm: https://github.com/ymcui/Chinese-BERT-wwm
 - Knowledge Distillation Toolkit - TextBrewer: https://github.com/airaria/TextBrewer
@@ -44,13 +45,26 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 | Model | Data | Google Drive | iFLYTEK Cloud |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（pw:Cpq8）](https://pan.iflytek.com:443/link/3DD1B2F248C5B33F3893829E9B7FCDA3)** <br/>**[PyTorch（pw:VBE6）](https://pan.iflytek.com:443/link/DF1DACD696FAC4E0BEE4EB09674CA7D8)** |
-| **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（pw:DfNj）](https://pan.iflytek.com:443/link/AECE9CCD57DD58A498676FD71D0557F8)** <br/>**[PyTorch（pw:6e3y）](https://pan.iflytek.com:443/link/AEF637509F3777F6526FF276AD19763C)** |
+| **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（pw:Cpq8）](https://pan.iflytek.com:443/link/3DD1B2F248C5B33F3893829E9B7FCDA3)** |
+| **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（pw:DfNj）](https://pan.iflytek.com:443/link/AECE9CCD57DD58A498676FD71D0557F8)** |
 
 > [1] Extended data includes: baike, news, QA data, with 5.4B words in total, which is exactly the same with [BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm).
 
+#### PyTorch Version
+
+If you need these models in PyTorch,
+
+1) Convert TensorFlow checkpoint into PyTorch, using [🤗Transformers](https://github.com/huggingface/transformers)
+
+2) Download from https://huggingface.co/hfl
+
+Steps: select one of the model in the page above → click "list all files in model" at the end of the model page → download bin/json files from the pop-up window
+
+#### Note
+
 The whole zip package roughly takes ~800M for `XLNet-mid` model.
 ZIP package includes the following files:
+
 ```
 chinese_xlnet_mid_L-24_H-768_A-12.zip
     |- xlnet_model.ckpt      # Model Weights

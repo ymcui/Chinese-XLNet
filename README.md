@@ -17,7 +17,7 @@
 本项目基于CMU/谷歌官方的XLNet：https://github.com/zihangdai/xlnet
 
 其他相关资源：
-
+- 中文MacBERT预训练模型：https://github.com/ymcui/MacBERT
 - 中文ELECTRA预训练模型：https://github.com/ymcui/Chinese-ELECTRA
 - 中文BERT-wwm预训练模型：https://github.com/ymcui/Chinese-BERT-wwm
 - 知识蒸馏工具TextBrewer：https://github.com/airaria/TextBrewer
@@ -55,16 +55,31 @@
 
 | 模型简称 | 语料 | Google下载 | 讯飞云下载 |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（密码Cpq8）](https://pan.iflytek.com:443/link/3DD1B2F248C5B33F3893829E9B7FCDA3)** <br/>**[PyTorch（密码VBE6）](https://pan.iflytek.com:443/link/DF1DACD696FAC4E0BEE4EB09674CA7D8)** |
-| **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（密码DfNj）](https://pan.iflytek.com:443/link/AECE9CCD57DD58A498676FD71D0557F8)** <br/>**[PyTorch（密码6e3y）](https://pan.iflytek.com:443/link/AEF637509F3777F6526FF276AD19763C)** |
+| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（密码Cpq8）](https://pan.iflytek.com:443/link/3DD1B2F248C5B33F3893829E9B7FCDA3)** |
+| **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（密码DfNj）](https://pan.iflytek.com:443/link/AECE9CCD57DD58A498676FD71D0557F8)** |
 
 > [1] 通用数据包括：百科、新闻、问答等数据，总词数达5.4B，与我们发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)训练语料相同。
 
-以上预训练模型以TensorFlow版本的权重为准。
-对于PyTorch版本，我们使用的是由Huggingface出品的[PyTorch-Transformers 1.0](https://github.com/huggingface/pytorch-transformers)提供的转换脚本。
-如果使用的是其他版本，请自行进行权重转换。
-中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点，`XLNet-mid`模型文件大小约**800M**。 
-以TensorFlow版`XLNet-mid, Chinese`为例，下载完毕后对zip文件进行解压得到：
+#### PyTorch版本
+
+如需PyTorch版本，
+
+1）请自行通过🤗Transformers提供的转换脚本进行转换。如需配置文件可进入到config文件夹中查找。
+
+2）或者通过huggingface官网直接下载PyTorch版权重：https://huggingface.co/hfl
+
+方法：点击任意需要下载的model → 拉到最下方点击"List all files in model" → 在弹出的小框中下载bin和json文件。
+
+#### 使用说明
+
+以上预训练模型以TensorFlow版本的权重为准。对于PyTorch版本，我们使用的是由Huggingface出品的[PyTorch-Transformers 1.0](https://github.com/huggingface/pytorch-transformers)提供的转换脚本。如果使用的是其他版本，请自行进行权重转换。
+
+或者通过huggingface官网直接下载PyTorch版权重：https://huggingface.co/hfl
+
+方法：点击任意需要下载的model → 拉到最下方点击"List all files in model" → 在弹出的小框中下载bin和json文件。
+
+中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点，`XLNet-mid`模型文件大小约**800M**。 以TensorFlow版`XLNet-mid, Chinese`为例，下载完毕后对zip文件进行解压得到：
+
 ```
 chinese_xlnet_mid_L-24_H-768_A-12.zip
     |- xlnet_model.ckpt      # 模型权重
