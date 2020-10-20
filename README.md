@@ -64,19 +64,13 @@
 
 如需PyTorch版本，
 
-1）请自行通过🤗Transformers提供的转换脚本进行转换。如需配置文件可进入到config文件夹中查找。
+1）请自行通过[🤗Transformers](https://github.com/huggingface/transformers)提供的转换脚本进行转换。如需配置文件可进入到config文件夹中查找。
 
 2）或者通过huggingface官网直接下载PyTorch版权重：https://huggingface.co/hfl
 
 方法：点击任意需要下载的model → 拉到最下方点击"List all files in model" → 在弹出的小框中下载bin和json文件。
 
 #### 使用说明
-
-以上预训练模型以TensorFlow版本的权重为准。对于PyTorch版本，我们使用的是由Huggingface出品的[PyTorch-Transformers 1.0](https://github.com/huggingface/pytorch-transformers)提供的转换脚本。如果使用的是其他版本，请自行进行权重转换。
-
-或者通过huggingface官网直接下载PyTorch版权重：https://huggingface.co/hfl
-
-方法：点击任意需要下载的model → 拉到最下方点击"List all files in model" → 在弹出的小框中下载bin和json文件。
 
 中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点，`XLNet-mid`模型文件大小约**800M**。 以TensorFlow版`XLNet-mid, Chinese`为例，下载完毕后对zip文件进行解压得到：
 
