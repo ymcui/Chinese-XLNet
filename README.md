@@ -64,7 +64,7 @@
 
 如需PyTorch版本，
 
-1）请自行通过[🤗Transformers](https://github.com/huggingface/transformers)提供的转换脚本进行转换。如需配置文件可进入到config文件夹中查找。
+1）请自行通过[🤗Transformers](https://github.com/huggingface/transformers)提供的转换脚本进行转换。
 
 2）或者通过huggingface官网直接下载PyTorch版权重：https://huggingface.co/hfl
 
