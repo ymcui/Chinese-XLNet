@@ -25,7 +25,9 @@
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
-**2021/7/21 由哈工大SCIR多位学者撰写的[《自然语言处理：基于预训练模型的方法》](https://item.jd.com/13344628.html)已出版，欢迎大家选购，也可参与我们的[赠书活动](https://mp.weixin.qq.com/s/gqtVQmC_UNfeEoHtf-1O3A)。**
+**2021/10/24 哈工大讯飞联合实验室发布面向少数民族语言的预训练模型CINO。查看：https://github.com/ymcui/Chinese-Minority-PLM **
+
+2021/7/21 由哈工大SCIR多位学者撰写的[《自然语言处理：基于预训练模型的方法》](https://item.jd.com/13344628.html)已出版，欢迎大家选购。
 
 2021/1/27 所有模型已支持TensorFlow 2，请通过transformers库进行调用或下载。https://huggingface.co/hfl
 
@@ -33,12 +35,12 @@
 
 2020/8/27 哈工大讯飞联合实验室在通用自然语言理解评测GLUE中荣登榜首，查看[GLUE榜单](https://gluebenchmark.com/leaderboard)，[新闻](http://dwz.date/ckrD)。
 
+<details>
+<summary>历史新闻</summary>
 2020/3/11 为了更好地了解需求，邀请您填写[调查问卷](https://wj.qq.com/s2/5637766/6281)，以便为大家提供更好的资源。
 
 2020/2/26 哈工大讯飞联合实验室发布[知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer)
 
-<details>
-<summary>历史新闻</summary>
 2019/12/19 本目录发布的模型已接入[Huggingface-Transformers](https://github.com/huggingface/transformers)，查看[快速加载](#快速加载)
 
 2019/9/5 `XLNet-base`已可下载，查看[模型下载](#模型下载)
