@@ -65,10 +65,10 @@
 * **`XLNet-mid`**：24-layer, 768-hidden, 12-heads, 209M parameters
 * **`XLNet-base`**：12-layer, 768-hidden, 12-heads, 117M parameters  
 
-| 模型简称 | 语料 | Google下载 | 讯飞云下载 |
+| 模型简称 | 语料 | Google下载 | 百度网盘下载 |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（密码68En）](http://pan.iflytek.com:80/link/ED7DF7ED04B871AFE8E4D97704B9134D)** |
-| **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（密码uCpe）](http://pan.iflytek.com:80/link/32619C31BDEFAF2D82CB8C7F66F01D5C)** |
+| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（密码2jv2）](https://pan.baidu.com/s/1bWEhc5gJ-ZMH6SO4m4GVyw?pwd=2jv2)** |
+| **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（密码ge7w）](https://pan.baidu.com/s/14KNb5KMvixKACEzgdd4Ntg?pwd=ge7w)** |
 
 > [1] 通用数据包括：百科、新闻、问答等数据，总词数达5.4B，与我们发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)训练语料相同。
 
@@ -84,7 +84,7 @@
 
 ### 使用说明
 
-中国大陆境内建议使用讯飞云下载点，境外用户建议使用谷歌下载点，`XLNet-mid`模型文件大小约**800M**。 以TensorFlow版`XLNet-mid, Chinese`为例，下载完毕后对zip文件进行解压得到：
+中国大陆境内建议使用百度网盘下载点，境外用户建议使用谷歌下载点，`XLNet-mid`模型文件大小约**800M**。 以TensorFlow版`XLNet-mid, Chinese`为例，下载完毕后对zip文件进行解压得到：
 
 ```
 chinese_xlnet_mid_L-24_H-768_A-12.zip
