@@ -16,17 +16,16 @@
 
 本项目基于CMU/谷歌官方的XLNet：https://github.com/zihangdai/xlnet
 
-其他相关资源：
-- 中文MacBERT预训练模型：https://github.com/ymcui/MacBERT
-- 中文ELECTRA预训练模型：https://github.com/ymcui/Chinese-ELECTRA
-- 中文BERT-wwm预训练模型：https://github.com/ymcui/Chinese-BERT-wwm
-- 知识蒸馏工具TextBrewer：https://github.com/airaria/TextBrewer
-- 模型裁剪工具TextPruner：https://github.com/airaria/TextPruner
+----
+
+[中文MacBERT](https://github.com/ymcui/MacBERT) | [中文ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [中文XLNet](https://github.com/ymcui/Chinese-XLNet) | [知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer) | [模型裁剪工具TextPruner](https://github.com/airaria/TextPruner)
 
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
-**2021/12/17 哈工大讯飞联合实验室推出模型裁剪工具包TextPruner。查看：https://github.com/airaria/TextPruner**
+**2022/3/30 我们开源了一种新预训练模型PERT。查看：https://github.com/ymcui/PERT**
+
+2021/12/17 哈工大讯飞联合实验室推出模型裁剪工具包TextPruner。查看：https://github.com/airaria/TextPruner
 
 2021/10/24 哈工大讯飞联合实验室发布面向少数民族语言的预训练模型CINO。查看：https://github.com/ymcui/Chinese-Minority-PLM
 
@@ -34,12 +33,12 @@
 
 2021/1/27 所有模型已支持TensorFlow 2，请通过transformers库进行调用或下载。https://huggingface.co/hfl
 
+<details>
+<summary>历史新闻</summary>
 2020/9/15 我们的论文["Revisiting Pre-Trained Models for Chinese Natural Language Processing"](https://arxiv.org/abs/2004.13922)被[Findings of EMNLP](https://2020.emnlp.org)录用为长文。
 
 2020/8/27 哈工大讯飞联合实验室在通用自然语言理解评测GLUE中荣登榜首，查看[GLUE榜单](https://gluebenchmark.com/leaderboard)，[新闻](http://dwz.date/ckrD)。
 
-<details>
-<summary>历史新闻</summary>
 2020/3/11 为了更好地了解需求，邀请您填写[调查问卷](https://wj.qq.com/s2/5637766/6281)，以便为大家提供更好的资源。
 
 2020/2/26 哈工大讯飞联合实验室发布[知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer)

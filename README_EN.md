@@ -6,18 +6,15 @@ We welcome all experts and scholars to download and use this model.
 
 This project is based on CMU/Google official XLNet: https://github.com/zihangdai/xlnet
 
-You may also interested in,
-
-- Chinese MacBERT: https://github.com/ymcui/MacBERT
-- Chinese ELECTRA: https://github.com/ymcui/Chinese-ELECTRA
-- Chinese BERT-wwm: https://github.com/ymcui/Chinese-BERT-wwm
-- Knowledge Distillation Toolkit - TextBrewer: https://github.com/airaria/TextBrewer
-- Model Pruning Toolkit - TextPruner: https://github.com/airaria/TextPruner
+---- 
+[Chinese MacBERT](https://github.com/ymcui/MacBERT) | [Chinese ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [Chinese XLNet](https://github.com/ymcui/Chinese-XLNet) | [Chinese BERT](https://github.com/ymcui/Chinese-BERT-wwm) | [TextBrewer](https://github.com/airaria/TextBrewer) | [TextPruner](https://github.com/airaria/TextPruner)
 
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
-**2021/12/17 We release a model pruning toolkit - TextPruner, check https://github.com/airaria/TextPruner**
+**2022/3/30 We release a new pre-trained model called PERT, check https://github.com/ymcui/PERT **
+
+2021/12/17 We release a model pruning toolkit - TextPruner, check https://github.com/airaria/TextPruner
 
 2021/1/27 All models support TensorFlow 2 now. Please use transformers library to access them or download from https://huggingface.co/hfl
 
@@ -25,10 +22,10 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 2020/8/27 We are happy to announce that our model is on top of GLUE benchmark, check [leaderboard](https://gluebenchmark.com/leaderboard).
 
-2020/2/26 We release a knowledge distillation toolkit [TextBrewer](https://github.com/airaria/TextBrewer)
-
 <details>
 <summary>Past News</summary>
+2020/2/26 We release a knowledge distillation toolkit [TextBrewer](https://github.com/airaria/TextBrewer)
+
 2019/12/19 The models in this repository now can be easily accessed through [Huggingface-Transformers](https://github.com/huggingface/transformers), check [Quick Load](#Quick-Load)
 
 2019/9/5 `XLNet-base` has been released. Check [Download](#Download)
@@ -366,7 +363,7 @@ A: Seems to be right. At least the tasks we tried above are substantially better
 
 ## Citation
 If you find the technical report or resource is useful, please cite the following technical report in your paper.
-https://arxiv.org/abs/2004.13922
+https://www.aclweb.org/anthology/2020.findings-emnlp.58
 ```
 @inproceedings{cui-etal-2020-revisiting,
     title = "Revisiting Pre-Trained Models for {C}hinese Natural Language Processing",
