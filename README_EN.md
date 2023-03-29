@@ -6,14 +6,16 @@ We welcome all experts and scholars to download and use this model.
 
 This project is based on CMU/Google official XLNet: https://github.com/zihangdai/xlnet
 
----- 
+----
 
 [Chinese LERT](https://github.com/ymcui/LERT) | [Chinese/English PERT](https://github.com/ymcui/PERT) [Chinese MacBERT](https://github.com/ymcui/MacBERT) | [Chinese ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [Chinese XLNet](https://github.com/ymcui/Chinese-XLNet) | [Chinese BERT](https://github.com/ymcui/Chinese-BERT-wwm) | [TextBrewer](https://github.com/airaria/TextBrewer) | [TextPruner](https://github.com/airaria/TextPruner)
 
 More resources by HFL: https://github.com/ymcui/HFL-Anthology
 
 ## News
-<b>2022/10/29 We release a new pre-trained model called LERT, check https://github.com/ymcui/LERT/</b>
+**Mar 28, 2023 We open-sourced Chinese LLaMA&Alpaca LLMs, which can be quickly deployed on PC. Check: https://github.com/ymcui/Chinese-LLaMA-Alpaca**
+
+2022/10/29 We release a new pre-trained model called LERT, check https://github.com/ymcui/LERT/
 
 2022/3/30 We release a new pre-trained model called PERT, check https://github.com/ymcui/PERT 
 

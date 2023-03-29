@@ -23,7 +23,9 @@
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
 ## 新闻
-**2022/10/29 我们提出了一种融合语言学信息的预训练模型LERT。查看：https://github.com/ymcui/LERT**
+**2023/3/28 开源了中文LLaMA&Alpaca大模型，可快速在PC上部署体验，查看：https://github.com/ymcui/Chinese-LLaMA-Alpaca**
+
+2022/10/29 我们提出了一种融合语言学信息的预训练模型LERT。查看：https://github.com/ymcui/LERT
 
 2022/3/30 我们开源了一种新预训练模型PERT。查看：https://github.com/ymcui/PERT
 
