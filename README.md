@@ -68,10 +68,10 @@
 * **`XLNet-mid`**：24-layer, 768-hidden, 12-heads, 209M parameters
 * **`XLNet-base`**：12-layer, 768-hidden, 12-heads, 117M parameters  
 
-| 模型简称 | 语料 | Google下载 | 百度网盘下载 |
+| 模型简称 | 语料 | 🤗HF | 百度网盘下载 |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（密码2jv2）](https://pan.baidu.com/s/1bWEhc5gJ-ZMH6SO4m4GVyw?pwd=2jv2)** |
-| **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（密码ge7w）](https://pan.baidu.com/s/14KNb5KMvixKACEzgdd4Ntg?pwd=ge7w)** |
+| **`XLNet-mid, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[PyTorch](https://huggingface.co/hfl/chinese-xlnet-mid)** | **[TensorFlow（密码2jv2）](https://pan.baidu.com/s/1bWEhc5gJ-ZMH6SO4m4GVyw?pwd=2jv2)** |
+| **`XLNet-base, Chinese`** | **中文维基+<br/>通用数据<sup>[1]</sup>** | **[PyTorch](https://huggingface.co/hfl/chinese-xlnet-base)** | **[TensorFlow（密码ge7w）](https://pan.baidu.com/s/14KNb5KMvixKACEzgdd4Ntg?pwd=ge7w)** |
 
 > [1] 通用数据包括：百科、新闻、问答等数据，总词数达5.4B，与我们发布的[BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)训练语料相同。
 

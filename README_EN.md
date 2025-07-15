@@ -52,10 +52,10 @@ More resources by HFL: https://github.com/ymcui/HFL-Anthology
 * **`XLNet-mid`**：24-layer, 768-hidden, 12-heads, 209M parameters  
 * **`XLNet-base`**：12-layer, 768-hidden, 12-heads, 117M parameters  
 
-| Model | Data | Google Drive | Baidu Disk |
+| Model | Data | 🤗HF | Baidu Disk |
 | :------- | :--------- | :---------: | :---------: |
-| **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1342uBc7ZmQwV6Hm6eUIN_OnBSz1LcvfA)** <br/>**[PyTorch](https://drive.google.com/open?id=1u-UmsJGy5wkXgbNK4w9uRnC0RxHLXhxy)** | **[TensorFlow（pw:2jv2）](https://pan.baidu.com/s/1bWEhc5gJ-ZMH6SO4m4GVyw?pwd=2jv2)** |
-| **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[TensorFlow](https://drive.google.com/open?id=1m9t-a4gKimbkP5rqGXXsEAEPhJSZ8tvx)** <br/>**[PyTorch](https://drive.google.com/open?id=1mPDgcMfpqAf2wk9Nl8OaMj654pYrWXaR)** | **[TensorFlow（pw:ge7w）](https://pan.baidu.com/s/14KNb5KMvixKACEzgdd4Ntg?pwd=ge7w)** |
+| **`XLNet-mid, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[PyTorch](https://huggingface.co/hfl/chinese-xlnet-mid)** | **[TensorFlow（pw:2jv2）](https://pan.baidu.com/s/1bWEhc5gJ-ZMH6SO4m4GVyw?pwd=2jv2)** |
+| **`XLNet-base, Chinese`** | **Wikipedia+Extended data<sup>[1]</sup>** | **[PyTorch](https://huggingface.co/hfl/chinese-xlnet-base)** | **[TensorFlow（pw:ge7w）](https://pan.baidu.com/s/14KNb5KMvixKACEzgdd4Ntg?pwd=ge7w)** |
 
 > [1] Extended data includes: baike, news, QA data, with 5.4B words in total, which is exactly the same with [BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm).
 
