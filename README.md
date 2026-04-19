@@ -440,10 +440,9 @@ https://arxiv.org/abs/2004.13922
 
 
 ## 关注我们
-欢迎关注哈工大讯飞联合实验室官方微信公众号。
+欢迎关注微信公众号"**涌现志**"，了解最新的技术动态。
 
-![qrcode.png](https://github.com/ymcui/cmrc2019/raw/master/qrcode.jpg)
-
+![qrcode.png](https://ymcui.com/images/qrcode.jpg)
 
 ## 问题反馈 & 贡献
 如有问题，请在GitHub Issue中提交。  
